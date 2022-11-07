@@ -1,0 +1,28 @@
+{
+  "name": "product-monitor",
+  "version": "1.0.0",
+  "description": "A simple bot that watches some products and sends a message when the product is available to an discord server with an webhook",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaoscheuermann/product-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaoscheuermann/product-monitor/issues"
+  },
+  "homepage": "https://github.com/joaoscheuermann/product-monitor#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
